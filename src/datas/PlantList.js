@@ -1,4 +1,12 @@
 import monstera from '../assets/monstera.jpg'
+import ficus from '../assets/ficus.webp'
+import pothos from '../assets/pothos.png'
+import yucca from '../assets/yucca.webp'
+import olivier from '../assets/olivier.jpg'
+import geranium from '../assets/geranium.jpg'
+import basilic from '../assets/basilic.webp'
+import aloe from '../assets/aloe.jpg'
+import succulente from '../assets/succulente.jpg'
 
 const plantList = [
 	{
@@ -11,7 +19,7 @@ const plantList = [
 	},
 	{
 		name: 'Ficus lyrata',
-		cover: monstera,
+		cover: ficus,
 		category: 'Classique',
 		id: '2ab',
 		light: 3,
@@ -19,7 +27,7 @@ const plantList = [
 	},
 	{
 		name: 'Pothos argenté',
-		cover: monstera,
+		cover: pothos,
 		category: 'Classique',
 		id: '3sd',
 		isSpecialOffer: true,
@@ -28,7 +36,7 @@ const plantList = [
 	},
 	{
 		name: 'Yucca',
-		cover: monstera,
+		cover: yucca,
 		category: 'Classique',
 		id: '4kk',
 		light: 3,
@@ -36,7 +44,7 @@ const plantList = [
 	},
 	{
 		name: 'Olivier',
-		cover: monstera,
+		cover: olivier,
 		category: 'Extérieur',
 		id: '5pl',
 		light: 3,
@@ -44,7 +52,7 @@ const plantList = [
 	},
 	{
 		name: 'Géranium',
-		cover: monstera,
+		cover: geranium,
 		category: 'Extérieur',
 		id: '6uo',
 		light: 2,
@@ -52,7 +60,7 @@ const plantList = [
 	},
 	{
 		name: 'Basilic',
-		cover: monstera,
+		cover: basilic,
 		category: 'Extérieur',
 		id: '7ie',
 		isSpecialOffer: true,
@@ -61,7 +69,7 @@ const plantList = [
 	},
 	{
 		name: 'Aloe',
-		cover: monstera,
+		cover: aloe,
 		category: 'Plante grasse',
 		id: '8fp',
 		isSpecialOffer: true,
@@ -70,7 +78,7 @@ const plantList = [
 	},
 	{
 		name: 'Succulente',
-		cover: monstera,
+		cover: succulente,
 		category: 'Plante grasse',
 		id: '9vn',
 		light: 2,
