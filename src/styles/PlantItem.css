@@ -1,3 +1,11 @@
+.plantList {
+  list-style-type: none;
+  padding: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
 .plantItem {
   position: relative;
   margin: 10px;
@@ -7,10 +15,35 @@
   flex-direction: column;
   text-transform: capitalize;
   font-weight: bold;
+  border-radius: 20px 0 20px 0;
+  transition: box-shadow 600ms ease-out;
 }
-
-.plantItemCover {
+.plantItem .plantItemCover {
   height: 220px;
   width: 220px;
-  border-radius: 20px;
+  border-radius: 20px 0 0 0;
+}
+.plantItem .plantName {
+  transition: all 600ms 100ms ease-out;
+}
+.plantItem .sales {
+  position: absolute;
+  right: 0px;
+  top: 10px;
+  font-weight: 500;
+  color: white;
+  padding: 5px 10px;
+  background-color: #31b572;
+  transition: all 800ms 300ms ease-in-out;
+}
+.plantItem:hover {
+  box-shadow: 1px 1px 6px darkgray, -1px -1px 6px darkgray;
+  cursor: pointer;
+}
+.plantItem:hover .plantName {
+  color: green;
+  transform: translateX(10px);
+}
+.plantItem:hover .sales {
+  transform: translateX(10px);
 }/*# sourceMappingURL=PlantItem.css.map */

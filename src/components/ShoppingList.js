@@ -1,9 +1,10 @@
 import plantList from '../datas/PlantList'
 import CareScale from './CareScale'
 import '../styles/PlantItem.css'
-import '../styles/ShoppingList.css'
 
-
+function onClick(plantName) {
+    alert(`Vous voulez acheter 1 ${plantName} ? Très bon choix !`)
+}
 
 function ShoppingList() {
     const categories = plantList.reduce(
@@ -21,10 +22,10 @@ function ShoppingList() {
 
             <ul className="plantList">
                 {plantList.map((plant) => (
-                    <li key={plant.id} className="plantItem">
+                    <li key={plant.id} className="plantItem" onClick={() => onClick(plant.name)}>
                         <img className="plantItemCover" src={plant.cover} alt={`${plant.name} cover`} />
                         {plant.isSpecialOffer && <div className="sales">Soldes</div>}
-                        {plant.name}
+                        <span className='plantName'>{plant.name}</span>
                         <div>
                             <CareScale careType='light' scaleValue={plant.light} />
                             <CareScale careType='water' scaleValue={plant.water} />
