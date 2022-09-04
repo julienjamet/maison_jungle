@@ -11,7 +11,7 @@ function QuestionForm() {
 
     return (
         <div>
-            <textarea value={inputValue} onChange={(e) => checkValue(e.target.value)} />
+            <input onChange={(e) => checkValue(e.target.value)} />
             <button onClick={() => alert(inputValue)}>Alertez moi 🚨</button>
         </div>
     )
