@@ -2,20 +2,27 @@ import plantList from '../datas/PlantList'
 import CareScale from './CareScale'
 import '../styles/PlantItem.css'
 
-function ShoppingList() {
-    const categories = plantList.reduce(
-        (acc, plant) => acc.includes(plant.category) ? acc : acc.concat(plant.category),
-        []
-    )
+function ShoppingList({cart, updateCart}) {
+
+    function addToCart(name, price) {
+        const currentPlantAdded = cart.find((plant) => plant.name === name)
+
+        if (currentPlantAdded) {
+            const cartFilteredCurrentPlant = cart.filter(
+                (plant) => plant.name !== name
+            )
+            updateCart([
+                ...cartFilteredCurrentPlant,
+                { name, price, amount: currentPlantAdded.amount + 1}
+            ])
+        }
+        else {
+            updateCart([...cart, { name, price, amount: 1}])
+        }
+    }
 
     return (
         <div>    
-            <ul>
-                {categories.map((cat) => (
-                    <li key={cat}>{cat}</li>
-                ))}
-            </ul>
-
             <ul className="plantList">
                 {plantList.map((plant) => (
                     <li key={plant.id} className="plantItem">
@@ -26,6 +33,7 @@ function ShoppingList() {
                             <CareScale careType='light' scaleValue={plant.light} />
                             <CareScale careType='water' scaleValue={plant.water} />
                         </div>
+                        <button className="add-button" onClick={() => addToCart(plant.name, plant.price)}>Ajouter</button>
                     </li> 
                 ))}
             </ul>
