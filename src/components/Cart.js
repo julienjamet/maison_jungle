@@ -1,9 +1,8 @@
 function Cart({ cart, updateCart }) {
-
   const total = cart.reduce(
     (acc, plantType) => acc + plantType.amount * plantType.price,
     0
-  )
+  );
 
   return (
     <div className="cart">
@@ -21,7 +20,7 @@ function Cart({ cart, updateCart }) {
         Vider le panier
       </button>
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;
