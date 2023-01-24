@@ -7,6 +7,9 @@ import geranium from '../assets/geranium.webp'
 import basilic from '../assets/basilic.webp'
 import aloe from '../assets/aloe.webp'
 import succulente from '../assets/succulente.webp'
+import cactus from '../assets/cactus.jpg'
+import citronnier from '../assets/citronnier.jpg'
+import cosmo from '../assets/cosmo.webp'
 
 const plantList = [
 	{
@@ -75,7 +78,7 @@ const plantList = [
 		price: 7
 	},
 	{
-		name: 'Aloe',
+		name: 'Aloe vera',
 		cover: aloe,
 		category: 'Plantes grasses',
 		id: '8fp',
@@ -92,6 +95,34 @@ const plantList = [
 		light: 2,
 		water: 1,
 		price: 10
+	},
+	{
+		name: 'Cactus',
+		cover: cactus,
+		category: 'Plantes grasses',
+		id: '10xz',
+		light: 2,
+		water: 1,
+		price: 12
+	},
+	{
+		name: 'Citronnier',
+		cover: citronnier,
+		category: "Plantes d'extérieur",
+		id: '11ww',
+		isSpecialOffer: true,
+		light: 3,
+		water: 3,
+		price: 40
+	},
+	{
+		name: 'Aloe cosmo',
+		cover: cosmo,
+		category: 'Plantes grasses',
+		id: '12kj',
+		light: 2,
+		water: 1,
+		price: 22
 	}
 ]
 

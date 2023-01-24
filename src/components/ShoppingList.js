@@ -20,7 +20,7 @@ function ShoppingList({ cart, updateCart, selectedRadio }) {
   }
 
   return (
-    <div>
+    <div className="list">
       <ul className="plantList">
         {plantList
           .filter((plant) => plant.category.includes(selectedRadio))
