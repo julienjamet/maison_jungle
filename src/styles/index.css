@@ -1,29 +1,20 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .banner {
-  color: black;
-  text-align: right;
-  padding: 32px;
-  border-bottom: solid 3px black;
   display: flex;
   justify-content: flex-end;
-  flex-direction: row;
   align-items: center;
-}
-.banner .title {
-  padding-left: 32px;
+  text-align: right;
+  padding: 32px;
+  border-bottom: solid 1px grey;
 }
 .banner .logo {
   height: 45px;
   width: 45px;
-}
-
-.cart {
-  color: white;
-  background-color: #31b572;
-  padding: 32px;
+  padding-right: 32px;
 }
 
 .main {
@@ -31,62 +22,24 @@ body {
 }
 
 .cart {
-  color: white;
-  background-color: #31b572;
-  padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  position: fixed;
   width: 200px;
-}
-
-.add-button {
-  cursor: pointer;
-  border-radius: 0px 15px 15px 0px;
-  border: none;
-  background-color: #85d7ae;
-  padding-right: 10px;
-  transition: all 600ms;
-}
-.add-button:hover {
-  padding-right: 30px;
-  padding-left: 30px;
-  font-weight: bold;
-}
-
-.toggle-button {
-  background: none;
-  outline: none;
-  border: none;
-  font-weight: 600;
-  cursor: pointer;
-  align-self: self-start;
-  padding: 0;
   color: white;
-  transition: all 500ms;
-}
-.toggle-button:hover {
-  letter-spacing: 0.5px;
-  color: #85d7ae;
-  font-size: 15px;
-}
-
-.cart-closed {
   padding: 32px;
-  width: 200px;
-}
-
-.cart-closed > button {
-  color: black;
+  background-color: #31b572;
+  border-radius: 0 0 20px 0;
 }
 
 .emptyCart {
   border-radius: 10px;
+  border: 1px solid grey;
   transition: all 600ms;
 }
 .emptyCart:hover {
   cursor: pointer;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.8px;
 }
 
 .footer {
@@ -105,24 +58,22 @@ body {
 }
 
 .plantList {
-  list-style-type: none;
-  padding: 32px;
   display: flex;
   flex-wrap: wrap;
-  max-width: 800px;
+  position: relative;
+  left: 325px;
+  width: 70%;
+  padding: 32px;
 }
 
 .plantItem {
-  position: relative;
-  margin: 10px;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
   flex-direction: column;
-  text-transform: capitalize;
-  font-weight: bold;
-  border: 1px dotted grey;
+  align-items: flex-start;
+  position: relative;
   border-radius: 20px 0 20px 0;
+  box-shadow: 1px 1px 1px rgb(215, 215, 215);
+  margin: 10px 10px 10px 35px;
   transition: box-shadow 600ms ease-out;
 }
 .plantItem .plantItemCover {
@@ -131,6 +82,8 @@ body {
   border-radius: 20px 0 0 0;
 }
 .plantItem .plantName {
+  font-weight: bold;
+  font-size: 14px;
   transition: all 600ms 100ms ease-out;
 }
 .plantItem .sales {
@@ -141,11 +94,11 @@ body {
   color: white;
   padding: 5px 10px;
   background-color: #31b572;
-  transition: all 800ms 300ms ease-in-out;
+  transition: all 600ms 200ms ease-in-out;
 }
 .plantItem:hover {
   box-shadow: 1px 1px 6px darkgray, -1px -1px 6px darkgray;
-  cursor: pointer;
+  cursor: default;
 }
 .plantItem:hover .plantName {
   color: green;
@@ -153,4 +106,19 @@ body {
 }
 .plantItem:hover .sales {
   transform: translateX(10px);
+}
+
+.add-button {
+  cursor: pointer;
+  border-radius: 0px 15px 15px 0px;
+  border: none;
+  background-color: #85d7ae;
+  padding-right: 10px;
+  transition: all 600ms;
+  font-size: 13px;
+}
+.add-button:hover {
+  padding-right: 30px;
+  padding-left: 30px;
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */

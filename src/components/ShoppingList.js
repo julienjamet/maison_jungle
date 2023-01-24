@@ -1,6 +1,5 @@
 import plantList from "../datas/PlantList"
 import CareScale from "./CareScale"
-import "../styles/PlantItem.css"
 
 function ShoppingList({ cart, updateCart }) {
   function addToCart(name, price) {
