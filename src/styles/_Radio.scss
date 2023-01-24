@@ -5,8 +5,10 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    list-style-type: none;
+    padding: 0;
 
-    input {
+    li {
         margin: 0 10px 0 50px;
         z-index: 1;
     }
@@ -14,7 +16,7 @@
 
 #cancel {
     width: 225px;
-    padding: 3px 40px 0 40px;
+    padding: 0 40px 0 40px;
     border-radius: 10px;
 	border: 1px solid grey;
     margin-left: 30px;

@@ -16,7 +16,7 @@ function App() {
       <div className="main">
         <Cart cart={cart} updateCart={updateCart} />
         <Radio selectedRadio={selectedRadio} setSelectedRadio={setSelectedRadio} />
-        <ShoppingList cart={cart} updateCart={updateCart} />
+        <ShoppingList cart={cart} updateCart={updateCart} selectedRadio={selectedRadio} />
       </div>
       
       <Footer />

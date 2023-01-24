@@ -1,18 +1,18 @@
-import monstera from '../assets/monstera.jpg'
+import monstera from '../assets/monstera.webp'
 import ficus from '../assets/ficus.webp'
-import pothos from '../assets/pothos.png'
+import pothos from '../assets/pothos.webp'
 import yucca from '../assets/yucca.webp'
-import olivier from '../assets/olivier.jpg'
-import geranium from '../assets/geranium.jpg'
+import olivier from '../assets/olivier.webp'
+import geranium from '../assets/geranium.webp'
 import basilic from '../assets/basilic.webp'
-import aloe from '../assets/aloe.jpg'
-import succulente from '../assets/succulente.jpg'
+import aloe from '../assets/aloe.webp'
+import succulente from '../assets/succulente.webp'
 
 const plantList = [
 	{
 		name: 'Monstera',
 		cover: monstera,
-		category: 'Classique',
+		category: 'Plantes classiques',
 		id: '1ed',
 		light: 2,
 		water: 3,
@@ -21,7 +21,7 @@ const plantList = [
 	{
 		name: 'Ficus lyrata',
 		cover: ficus,
-		category: 'Classique',
+		category: 'Plantes classiques',
 		id: '2ab',
 		light: 3,
 		water: 1,
@@ -30,7 +30,7 @@ const plantList = [
 	{
 		name: 'Pothos argenté',
 		cover: pothos,
-		category: 'Classique',
+		category: 'Plantes classiques',
 		id: '3sd',
 		isSpecialOffer: true,
 		light: 1,
@@ -40,7 +40,7 @@ const plantList = [
 	{
 		name: 'Yucca',
 		cover: yucca,
-		category: 'Classique',
+		category: 'Plantes classiques',
 		id: '4kk',
 		light: 3,
 		water: 1,
@@ -49,7 +49,7 @@ const plantList = [
 	{
 		name: 'Olivier',
 		cover: olivier,
-		category: 'Extérieur',
+		category: "Plantes d'extérieur",
 		id: '5pl',
 		light: 3,
 		water: 1,
@@ -58,7 +58,7 @@ const plantList = [
 	{
 		name: 'Géranium',
 		cover: geranium,
-		category: 'Extérieur',
+		category: "Plantes d'extérieur",
 		id: '6uo',
 		light: 2,
 		water: 2,
@@ -67,7 +67,7 @@ const plantList = [
 	{
 		name: 'Basilic',
 		cover: basilic,
-		category: 'Extérieur',
+		category: "Plantes d'extérieur",
 		id: '7ie',
 		isSpecialOffer: true,
 		light: 2,
@@ -77,7 +77,7 @@ const plantList = [
 	{
 		name: 'Aloe',
 		cover: aloe,
-		category: 'Plante grasse',
+		category: 'Plantes grasses',
 		id: '8fp',
 		isSpecialOffer: true,
 		light: 2,
@@ -87,7 +87,7 @@ const plantList = [
 	{
 		name: 'Succulente',
 		cover: succulente,
-		category: 'Plante grasse',
+		category: 'Plantes grasses',
 		id: '9vn',
 		light: 2,
 		water: 1,

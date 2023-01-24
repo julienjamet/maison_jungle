@@ -1,25 +1,26 @@
-import { useState } from "react"
-
-function Radio() {
+function Radio({ selectedRadio, setSelectedRadio }) {
     const radios = ["Plantes classiques", "Plantes grasses", "Plantes d'extérieur"]
-    const [selectedRadio, setSelectedRadio] = useState("")
+
+    function filter(id) {
+        setSelectedRadio(id)
+    }
 
     return (
-        <div className="range">
-            {radios.map((category) => (
-                <>
+        <ul className="range">
+            {radios.map((category, index) => (
+                <li key={index}>
                     <input
                         type="radio"
                         id={category}
                         name="categoryName"
                         checked={category === selectedRadio}
-                        onChange={(e) => setSelectedRadio(e.target.id)}
+                        onChange={(e) => filter(e.target.id)}
                     />
                     <label htmlFor={category}>{category}</label>
-                </>
+                </li>
             ))}
             {selectedRadio && <button id="cancel" onClick={() => setSelectedRadio("")} >Annuler la recherche</button>}
-        </div>
+        </ul>
     )
 }
 
