@@ -65,7 +65,7 @@ body {
   background-color: #31b572;
   height: 80px;
   width: 90px;
-  border-radius: 0 25px 25px 0;
+  border-radius: 0 0 25px 0;
 }
 .cart-icon i {
   font-size: 25px;
@@ -182,9 +182,6 @@ body {
 }
 .plantItem:hover .sales {
   transform: translateX(10px);
-}
-.plantItem:hover .care {
-  cursor: pointer;
 }
 
 .add-button {
