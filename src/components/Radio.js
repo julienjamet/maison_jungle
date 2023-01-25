@@ -10,7 +10,7 @@ function Radio({ selectedRadio, setSelectedRadio }) {
   }
 
   return (
-    <ul className="range">
+    <ul className="radio">
       {radios.map((category, index) => (
         <li key={index}>
           <input

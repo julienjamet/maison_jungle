@@ -1,3 +1,58 @@
-@media all and (max-width: 768px) {
+@media all and (max-width: 940px) {
+    .main {
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .cart, .cart-icon {
+        padding: 10px;
+        z-index: 0;
+    }
+    
+    .radio {
+        position: absolute;
+        left: 240px;
+        align-items: flex-start;
+        top: 170px;
+        width: 190px;
+        flex-direction: column;
+        margin: -10px 0 0 0;
+        li {
+            margin: 0 0 8px 0;
+        }
+        #cancel {
+            width: 85%;
+            margin-left: 3px;
+        }
+    }
 
+    .plantList {
+        margin-top: 50px;
+        margin-right: 10%;
+        margin-left: -50px;
+        li {
+            margin-left: 0px;
+        }
+    }
+
+}
+
+@media all and (max-width: 480px) {
+    .banner h1 {
+        margin: 0;
+    }
+    .cart {
+        max-width: 160px;
+        padding: 5px 2px 5px 2px;
+        button {
+            width: 70%;
+            padding: 0;
+        }
+    }
+    .plantList { 
+        margin-left: 150px;
+        padding-left: 150px;
+        li {
+        margin: 25px 0 0 0;
+        }
+    }
 }
