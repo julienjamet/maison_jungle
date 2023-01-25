@@ -4,17 +4,70 @@
 	position: fixed;
 	width: 200px;
 	color: white;
-	padding: 32px;
+	padding: 20px 32px 32px 32px;
 	background-color: #31b572;
 	border-radius: 0 0px 20px 0;
+	z-index: 1;
+	.cross {
+		align-self: flex-end;
+		width: 10px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	
+	.emptyCart {
+		border-radius: 10px;
+		border: 1px solid grey;
+		transition: all 600ms;
+		&:hover {
+			cursor: pointer;
+			letter-spacing: 0.8px;
+		}
+	}
 }
 
-.emptyCart {
-	border-radius: 10px;
-	border: 1px solid grey;
-	transition: all 600ms;
+.cart-icon {
+	position: fixed;
+	left: 0;
+	background-color: #31b572;
+	height: 80px;
+	width: 90px;
+	border-radius: 0 25px 25px 0;
+	i {
+		font-size: 25px;
+		padding: 28px 25px;
+	}
+
 	&:hover {
 		cursor: pointer;
-		letter-spacing: 0.8px;
+		i {
+			color: white;
+		}
+	}
+}
+
+.notif {
+	position: fixed;
+	left: 52px;
+	top: 190px;
+	background-color: red;
+	color: white;
+	border-radius: 100%;
+	padding: 3px 5px;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.item {
+	display: flex;
+	justify-content: space-between;
+}
+.delete-item {
+	padding-top: 2px;
+	transition: color 400ms;
+	&:hover {
+		cursor: pointer;
+		color: black;
 	}
 }
