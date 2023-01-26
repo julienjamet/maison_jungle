@@ -38,22 +38,37 @@
 
 @media all and (max-width: 480px) {
     .banner h1 {
-        margin: 0;
+        margin: auto;
     }
     .cart {
         top: 0;
         height: 100vh;
-        width: 93vw;
-        z-index: 2;
+        width: 95vw;
+        z-index: 4;
         button {
+            width: 50%;
             padding: 0;
+            margin: auto;
+        }
+    }
+    .cart-icon {
+        position: absolute;
+        .notif {
+            position: absolute;
+            top: 50px;
+            left: 60px;
         }
     }
     .plantList { 
-        margin-left: 150px;
-        padding-left: 150px;
+        margin: 150px auto;
+        padding-left: 0;
         li {
         margin: 25px 0 0 0;
         }
+    }
+    .radio {
+        left: 0;
+        top: 270px;
+        margin: auto;
     }
 }
