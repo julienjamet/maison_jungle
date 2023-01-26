@@ -256,14 +256,16 @@ body {
   }
   .cart {
     top: 0;
-    height: 100vh;
+    height: 110vh;
     width: 95vw;
     z-index: 4;
+    padding-right: 15px;
+    border-radius: 0;
   }
   .cart button {
     width: 50%;
     padding: 0;
-    margin: auto;
+    margin: 0 auto;
   }
   .cart-icon {
     position: absolute;
