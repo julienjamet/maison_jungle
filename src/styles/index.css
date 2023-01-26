@@ -285,6 +285,10 @@ body {
   .plantList li {
     margin: 25px 0 0 0;
   }
+  .plantList li button:active {
+    background-color: #31b572;
+    color: white;
+  }
   .radio {
     left: 30px;
     top: 270px;
