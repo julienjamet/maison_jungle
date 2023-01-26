@@ -59,15 +59,21 @@
         }
     }
     .cart-icon {
-        position: absolute;
+        width: 10%;
+        height: 25px;
+        z-index: 3;
+        i {
+            font-size: 20px;
+            padding: 0;
+        }
         .notif {
             position: absolute;
-            top: 50px;
-            left: 60px;
+            top: 15px;
+            left: 25px;
         }
     }
     .plantList { 
-        margin: 150px auto;
+        margin: 120px auto;
         padding-left: 0;
         li {
             margin: 25px 0 0 0;
@@ -78,8 +84,7 @@
         }
     }
     .radio {
-        left: 30px;
-        top: 270px;
-        margin: auto;
+        left: 28%;
+        top: 220px;
     }
 }

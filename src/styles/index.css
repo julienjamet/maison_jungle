@@ -271,15 +271,21 @@ body {
     margin: 0 auto;
   }
   .cart-icon {
-    position: absolute;
+    width: 10%;
+    height: 25px;
+    z-index: 3;
+  }
+  .cart-icon i {
+    font-size: 20px;
+    padding: 0;
   }
   .cart-icon .notif {
     position: absolute;
-    top: 50px;
-    left: 60px;
+    top: 15px;
+    left: 25px;
   }
   .plantList {
-    margin: 150px auto;
+    margin: 120px auto;
     padding-left: 0;
   }
   .plantList li {
@@ -290,8 +296,7 @@ body {
     color: #31b572;
   }
   .radio {
-    left: 30px;
-    top: 270px;
-    margin: auto;
+    left: 28%;
+    top: 220px;
   }
 }/*# sourceMappingURL=index.css.map */
