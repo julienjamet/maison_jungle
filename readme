@@ -1,1 +1,8 @@
 This project is the thread of the OpenClassrooms course on React.
+
+To run the site locally, you will need to have Node and npm installed on your machine.
+
+Then please follow these instructions : 
+
+- Clone the repository
+- From the [root] folder, run `npm install` then `npm start`
