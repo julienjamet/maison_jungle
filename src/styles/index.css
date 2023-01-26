@@ -139,7 +139,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   max-width: 75%;
-  padding: 80px 0 80px 315px;
+  padding: 80px 0 20px 315px;
   margin: 0;
 }
 
@@ -199,21 +199,6 @@ body {
   padding-right: 30px;
   padding-left: 30px;
   font-weight: bold;
-}
-
-.footer {
-  color: black;
-  padding: 32px;
-  border-top: solid 3px black;
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 500;
-}
-
-.footer-elem {
-  margin-bottom: 10px;
 }
 
 @media all and (max-width: 940px) {
@@ -285,7 +270,7 @@ body {
     left: 25px;
   }
   .plantList {
-    margin: 120px auto;
+    margin: 100px auto;
     padding-left: 0;
   }
   .plantList li {

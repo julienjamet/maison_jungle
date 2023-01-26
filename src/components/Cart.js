@@ -41,7 +41,7 @@ function Cart({ cart, updateCart }) {
   return showCart ? (
     <div className="cart">
       <div className="cross" onClick={() => setShowCart(false)}>
-        <i class="fa-solid fa-xmark"></i>
+        <i className="fa-solid fa-xmark"></i>
       </div>
       <h2>Votre panier</h2>
 
@@ -49,7 +49,7 @@ function Cart({ cart, updateCart }) {
         <div key={`${index}`} className="item">
           {name} {price} € x {amount}{" "}
           <div className="delete-item" onClick={() => deleteItem(name, price)}>
-            <i class="fa-solid fa-xmark"></i>
+            <i className="fa-solid fa-xmark"></i>
           </div>
         </div>
       ))}
@@ -63,7 +63,7 @@ function Cart({ cart, updateCart }) {
   ) : (
     <div className="cart-icon">
       <i
-        class="fa-solid fa-cart-shopping"
+        className="fa-solid fa-cart-shopping"
         onClick={() => setShowCart(true)}
       ></i>
       {totalNotif !== 0 && <span className="notif">{totalNotif}</span>}

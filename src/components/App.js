@@ -2,7 +2,6 @@ import Banner from "./Banner";
 import Cart from "./Cart";
 import Radio from "./Radio";
 import ShoppingList from "./ShoppingList";
-import Footer from "./Footer";
 import { useState } from "react";
 
 function App() {
@@ -25,8 +24,6 @@ function App() {
           selectedRadio={selectedRadio}
         />
       </div>
-
-      <Footer />
     </div>
   );
 }
