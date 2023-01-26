@@ -251,6 +251,9 @@ body {
   }
 }
 @media all and (max-width: 480px) {
+  .banner .logo {
+    margin-left: 10%;
+  }
   .banner h1 {
     margin: auto;
   }

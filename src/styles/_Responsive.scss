@@ -37,8 +37,13 @@
 }
 
 @media all and (max-width: 480px) {
-    .banner h1 {
+    .banner {
+        .logo {
+            margin-left: 10%;
+        }
+        h1 {
         margin: auto;
+        }
     }
     .cart {
         top: 0;
