@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.fae9ff30.css",
+    "main.js": "/static/js/main.3dda3d60.js",
+    "static/media/geranium.webp": "/static/media/geranium.7e12a0da4db8eeb37a0d.webp",
+    "static/media/yucca.webp": "/static/media/yucca.e0f21504e871bd3ed054.webp",
+    "static/media/citronnier.webp": "/static/media/citronnier.4fd7c63ed75846eb3c1e.webp",
+    "static/media/olivier.webp": "/static/media/olivier.fbe3cb4bd2857e42e004.webp",
+    "static/media/cactus.webp": "/static/media/cactus.7c4a748893612428439c.webp",
+    "static/media/aloe.webp": "/static/media/aloe.92c1584f1b14344c20df.webp",
+    "static/media/ficus.webp": "/static/media/ficus.5dc91100e2d3e21be698.webp",
+    "static/media/succulente.webp": "/static/media/succulente.12e37327775abf351a06.webp",
+    "static/media/pothos.webp": "/static/media/pothos.ff68215cba2b5ed50143.webp",
+    "static/media/monstera.webp": "/static/media/monstera.1fd2542cedae9642fa1e.webp",
+    "static/media/basilic.webp": "/static/media/basilic.6fc5d7e4aa40d83bffd2.webp",
+    "static/media/cosmo.webp": "/static/media/cosmo.9085fbb6a58af7dbc203.webp",
+    "static/media/sun.svg": "/static/media/sun.26fb5ace82c593ca64a695a4d42b0568.svg",
+    "static/media/water.svg": "/static/media/water.cceb486fe1f26063bde712aa9fd7ea1e.svg",
+    "index.html": "/index.html",
+    "main.fae9ff30.css.map": "/static/css/main.fae9ff30.css.map",
+    "main.3dda3d60.js.map": "/static/js/main.3dda3d60.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fae9ff30.css",
+    "static/js/main.3dda3d60.js"
+  ]
+}
